@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #dfdfdf;
+    --text-color: #030c31;
+    --header-color: #09152f;
+    --header-text-color: #eee;
+    --more-white: #fdf8f8;
+    --pure-white: #fff;
+    --worksphere-color: #35bcfb;
+    --dark-red: #920e0e;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--main-color);
+    font-family: Poppins, sans-serif;
+}
+
+header {
+
+    background-color: var(--header-color);
+    min-height: 50px;
+    display: grid;
+    width: 100%;
+    place-items: center;
+    color: var(--header-text-color);
+    border-bottom: 3px solid var(--worksphere-color);
+}
+
+.holder {
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.worksphere {
+    display: flex;
+    place-items: center;
+    gap: 10px;
+    font-family: Bahnschrift;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 20px 20px 0;
+}
+
+.half {
+    color: var(--worksphere-color);
+}
+
+header ul {
+    list-style: none;
+    border-left: 3px solid #eee;
+    padding-left: 15px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 20px 20px 0;
+}
+
+header li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.2s ease;
+}
+
+header li:hover {
+    color: var(--worksphere-color);
+    cursor: pointer;
+}
+
+li:hover svg polygon {
+    fill: var(--worksphere-color);
+    cursor: pointer;
+}
+
+.like-body {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+}
+.first-section {
+    padding: 20px;
+    background-color: var(--more-white);
+    border-radius: 10px;
+}
+
+.first-section fieldset {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.first-section fieldset input {
+    padding: 5px;
+    background-color: var(--main-color);
+    outline: none;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+.first-section fieldset input[type="number"] {
+    min-width: 130px;
+}
+
+.first-section fieldset input:focus  {
+    border: 1px solid var(--text-color);
+}
+
+
+.first-section div {
+    min-width: 100px;
+}
+
+.first-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.read {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    align-items: center;
+}
+
+.read label {
+    margin: 0;
+}
+
+.first-section  legend {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 0 0 20px 0;
+}
+
+.add-book {
+    display: block;
+    font-weight: 700;
+    color: var(--pure-white);
+    width: 120px;
+    background-color: var(--header-color);
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    transition: 0.25s ease-in-out;
+}
+
+.add-book:hover {
+    background-color: var(--worksphere-color);
+    cursor: pointer;
+}
