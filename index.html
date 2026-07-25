@@ -1,16 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Book Library</title>
+    <title>My Library</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/WorkSphere.jpg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display-swap">
     <script src="script.js" defer></script>
-    
+
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="holder">
+            <div class="worksphere">
+                <img src="assets/WorkSphere.jpg" height="70" alt="WorkSphere official logo">
+                <span>Work<span class="half">Sphere</span></span>
+            </div>
+            <ul>
+                <li>Dashboard</li>
+                <li>Community</li>
+                <li>Support</li>
+                <li>Profile <svg xmlns="http://w3.org" viewBox="0 0 100 100" width="15" height="12">
+                        <polygon points="10,20 90,20 50,90" fill="#fff" />
+                    </svg></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="like-body">
+            <h1>MY DIGITAL LIBRARY</h1>
+
+            <section class="first-section">
+                <form action="submit" method="get" autocomplete="on">
+                    <fieldset>
+                        <legend>Add New Book</legend>
+                        <div>
+                            <label for="title">Title</label>
+                            <input type="text" id="title" placeholder="Your book's title" required>
+                        </div>
+
+                        <div>
+                            <label for="author">Author</label>
+                            <input type="text" id="author" placeholder="Your book's author" required>
+                        </div>
+
+                        <div>
+                            <label for="pages">Pages</label>
+                            <input type="number" min="1" max="100000" id="pages" placeholder="How many pages" required>
+                        </div>
+
+                        <div class="read">
+                            <input type="checkbox" id="read">
+                            <label for="read">Read?</label>
+                        </div>
+
+                        <button class="add-book" type="submit">ADD BOOK</button>
+                    </fieldset>
+                </form>
+            </section>
+
 </body>
+
 </html>
