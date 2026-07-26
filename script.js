@@ -8,8 +8,17 @@ function Book(title, author, pages, readStatus) {
     this.id = crypto.randomUUID();
 }
 
-const firstBook = new Book("Revenge of Airthrone", "Topk James", 1200, "Read");
+Book.prototype.toggleRead = function() {
+    if (this.readStatus == "Read") {
+        this.readStatus = "Unread";
+    } else {
+        this.readStatus = "Read";
+    }
+    return this.readStatus;
+};
+
+const firstBook = new Book("Revenge of Airthrone", "Topk James", 1443, "Read");
 
 myLibrary.push(firstBook);
-
 console.log(myLibrary);
+console.log(firstBook.toggleRead());
