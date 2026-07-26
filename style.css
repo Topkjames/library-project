@@ -207,7 +207,11 @@ li:hover svg polygon {
     color: #333;
 }
 
-
+.readStatus {
+    display: flex;
+    margin: 5px 0 10px ;
+    place-items: center;
+}
 .status {
     font-weight: 700;
     padding: 2px 12px;
@@ -229,7 +233,6 @@ li:hover svg polygon {
     border: 1px solid #ef9a9a;
 }
 
-/* Buttons */
 .toggle-btn {
     background-color: #4CAF50;
     color: white;

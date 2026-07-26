@@ -35,7 +35,9 @@ function render() {
         <h3>${book.title}</h3>
         <p>${book.author}</p>
         <p>Pages: ${book.pages}</p>
-        <p>Status: ${book.readStatus}</p>
+        <div class="readStatus">
+        <p>Status: <span class="status" data-status="${book.readStatus}">${book.readStatus}</span></p>
+        </div>
         <button class="toggle-btn">Mark ${book.readStatus === "Read" ? "Unread" : "Read"}</button>
         <button class="delete-btn">Remove</button>
         `;
